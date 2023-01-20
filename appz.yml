@@ -1,28 +1,28 @@
 app:
-  name: AppzMongoDB
-  code: AMDB
-  notify: appz@cloudbourne.co
+  name: MongoDB-Backup
+  code: MongoDB-Backup
+  notify: dkarthik@ecloudcontrol.com
 
 build:
-  version: 4.4
+  version: 5.0
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: mongo-4.4
+  image_template: mongo-5.0
   
 deploy:
-  context: alpha/DEV
+  context: dinesh-kd7/DEV
   type: statefulset
   replicas: 1
   port:
   - 27017
 
 volumes:
-- claim: mongo-data
+- claim: mongo-backup
   mount: /appz/data
-  name: mongo-data
+  name: mongo-backup
   size: 5Gi
   mode: ReadWriteOnce
   
 properties:
-  revision : 04
+  revision : 01
