@@ -4,11 +4,11 @@ app:
   notify: dkarthik@ecloudcontrol.com
 
 build:
-  version: 5.0
+  version: 4.4
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: mongo-5.0
+  image_template: mongo-4.4
   
 deploy:
   context: dinesh-kd7/DEV
