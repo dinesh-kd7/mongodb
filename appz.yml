@@ -25,4 +25,9 @@ volumes:
   mode: ReadWriteOnce
   
 properties:
-  revision : 02
+    DB_USER_ADMIN: appz
+    DB_USER_ADMIN_PASSWORD: 
+      VAULT: DB_USER_ADMIN_PASSWORD
+    MONGODB_HOST: 127.0.0.1
+    MONGODB_PORT: 27017
+    revision : 02
