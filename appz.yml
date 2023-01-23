@@ -25,6 +25,10 @@ volumes:
   mode: ReadWriteOnce
   
 properties:
+    VAULT_ROLE_ID: $VAULT_ROLE_ID 
+    VAULT_SECRET_ID: $VAULT_SECRET_ID 
+    VAULT_APPROLE: $VAULT_APPROLE
+    VAULT_ADDR: https://vault:8200
     DB_USER_ADMIN: appz
     DB_USER_ADMIN_PASSWORD: 
       VAULT: DB_USER_ADMIN_PASSWORD
