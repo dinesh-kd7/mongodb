@@ -30,4 +30,4 @@ properties:
     MONGODB_HOST: 127.0.0.1
     MONGODB_PORT: 27017
     AUTH_ENABLE: 1
-    revision : 06
+    revision : 07
