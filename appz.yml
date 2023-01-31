@@ -1,14 +1,14 @@
 app:
-  name: MongoDB-Backup
-  code: MongoDB-Backup
+  name: MongoDB
+  code: MongoDB
   notify: dkarthik@ecloudcontrol.com
 
 build:
-  version: 5.0
+  version: 4.4
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: mongo-5.0
+  image_template: mongo-4.4
   
 deploy:
   context: dinesh-kd7/DEV
@@ -25,9 +25,5 @@ volumes:
   mode: ReadWriteOnce
   
 properties:
-    DB_USER_ADMIN: appz
-    DB_USER_ADMIN_PASSWORD: mongo
-    MONGODB_HOST: 127.0.0.1
-    MONGODB_PORT: 27017
     AUTH_ENABLE: 1
     revision : 10
